@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regula Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regula</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">
+    <img src="assets/images/logo-regula.png" alt="logo">
+    <span><b>Regula</b></span>
+  </div>
+
+  <nav id="nav">
+    <a href="#hero" data-i18n="nav_home">Inicio</a>
+    <a href="#features" data-i18n="nav_features">Funcionalidades</a>
+    <a href="#pricing" data-i18n="nav_pricing">Precios</a>
+    <a href="#contact" data-i18n="nav_contact">Contacto</a>
+  </nav>
+
+  <button id="langToggle">EN</button>
+</header>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="hero-text">
+    <h1 data-i18n="hero_title">Sistema Inteligente de Monitoreo de Balones de Gas</h1>
+    <p data-i18n="hero_desc">
+      Revoluciona la gestión de tu inventario de gas con tecnología IoT 
+avanzada. Monitoreo en tiempo real, alertas inteligentes y control total de 
+tu operación.
+    </p>
+
+    <div class="buttons">
+      <button class="primary" data-i18n="btn_demo">Solicitar Demo</button>
+      <button class="secondary" data-i18n="btn_video">Ver Video</button>
+    </div>
+  </div>
+
+  <div class="hero-img">
+    <img src="assets/images/dashboard.jpg" alt="dashboard">
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="features">
+  <h2 data-i18n="features_title">Funcionalidades</h2>
+  <div class="cards">
+    <div class="card">📦 <span data-i18n="f1">Gestión de inventario</span></div>
+    <div class="card">🚚 <span data-i18n="f2">Control de distribución</span></div>
+    <div class="card">⚠️ <span data-i18n="f3">Alertas de gas</span></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-left">
+    <h3><b>Regula</b></h3>
+    <p data-i18n="footer_desc">
+      Revolucionando la gestión y seguridad de tu empresa.
+    </p>
+  </div>
+
+  <div class="footer-links">
+    <a href="#">Contactanos</a>
+    <a href="#">Servicios</a>
+    <a href="#">Ubicación</a>
+  </div>
+
+  <div class="footer-links">
+    <a href="#">Nuestro equipo</a>
+    <a href="#">Únete a nosotros</a>
+    <a href="#">Libro de reclamaciones</a>
+    <a href="#">Términos y condiciones</a>
+  </div>
+
+  <p class="copy">© 2026 Regula. All Rights Reserved.</p>
+</footer>
+
+<script src="assets/js/script.js"></script>
 </body>
 </html>
